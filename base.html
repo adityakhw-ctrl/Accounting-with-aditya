@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aditya Accounting</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>📊 Aditya</h2>
+    <a href="/home">🏠 Home</a>
+    <a href="/company">🏢 Company</a>
+    <a href="/entry">📘 Entry</a>
+    <a href="/gstr">💼 GSTR</a>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <h1>Welcome to Aditya Accounting</h1>
+      <a href="#" class="btn">🔗 Tally Connector</a>
+    </div>
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+  </div>
+</body>
+</html>

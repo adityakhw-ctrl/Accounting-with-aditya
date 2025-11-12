@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - Aditya Accounting</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="login-body">
+  <form method="post" class="login-box">
+    <h2>🔒 Login (Paid users only)</h2>
+    <input type="email" name="email" placeholder="Email" required>
+    <button type="submit">Login</button>
+    <p>Note: This demo accepts pre-approved emails. Payment webhook will add emails.</p>
+  </form>
+</body>
+</html>
